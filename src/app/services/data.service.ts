@@ -61,16 +61,16 @@ export class DataService {
       ),
       new Person(
         "105",
-        "John",
+        "Steve Jobs",
         1234567895,
         25,
         "US",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaCx2moGjcuH9eGrbcrnesZXkJxUcnYcsxQE0BliO7IR6I3KpH&usqp=CAU",
+        "https://upload.wikimedia.org/wikipedia/commons/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg",
         "Steve Jobs was a charismatic pioneer of the personal computer era. With Steve Wozniak, Jobs founded Apple Inc. in 1976 and transformed the company into a world leader in telecommunications. Widely considered a visionary and a genius, he oversaw the launch of such revolutionary products as the iPod and the iPhone."
       ),
       new Person(
         "106",
-        "Jack",
+        "Mark Zuckerberg",
         1234567896,
         26,
         "UK",
@@ -79,7 +79,7 @@ export class DataService {
       ),
       new Person(
         "107",
-        "Arti",
+        "Mother Teresa",
         1234567897,
         27,
         "Punjab",
@@ -97,12 +97,12 @@ export class DataService {
       ),
       new Person(
         "109",
-        "Kapil",
+        "Kapil Dev",
         1234567899,
         29,
         "Haryana",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaCx2moGjcuH9eGrbcrnesZXkJxUcnYcsxQE0BliO7IR6I3KpH&usqp=CAU",
-        "Steve Jobs was a charismatic pioneer of the personal computer era. With Steve Wozniak, Jobs founded Apple Inc. in 1976 and transformed the company into a world leader in telecommunications. Widely considered a visionary and a genius, he oversaw the launch of such revolutionary products as the iPod and the iPhone."
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRKp1gtmK1tUNUxd4RXZSYZeJab1AlizE0unruyy7zNNJFiuxcm&usqp=CAU",
+        "Kapil Dev Ram Lal Nikhanj is a former Indian cricketer. He was a fast bowler and a hard hitting middle order batsman. Regarded as one of the greatest all-rounders to play the game, he is also regarded as one of the greatest captains in the history of cricket."
       ),
       new Person(
         "110",
@@ -112,6 +112,60 @@ export class DataService {
         "Agra",
         "https://www.gstatic.com/tv/thumb/persons/589228/589228_v9_ba.jpg",
         "Mark Elliot Zuckerberg is an American internet entrepreneur and philanthropist. He is known for co-founding Facebook, Inc. and serves as its chairman, chief executive officer, and controlling shareholder. He also co-founded and is a board member of the solar sail spacecraft development project Breakthrough Starshot."
+      ),
+      new Person(
+        "111",
+        "Sundar Pichai",
+        1234567901,
+        30,
+        "India",
+        "https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0.jpg",
+        "Pichai Sundararajan, also known as Sundar Pichai, is an Indian American business executive, the chief executive officer of Alphabet Inc. and its subsidiary Google LLC. Pichai began his career as a materials engineer and joined Google as a management executive in 2004."
+      ),
+      new Person(
+        "112",
+        "Steve Wozniak",
+        1234567902,
+        33,
+        "America",
+        "https://www.gstatic.com/tv/thumb/persons/537913/537913_v9_ba.jpg",
+        "Stephen Gary Wozniak, also known by his nickname Woz, is an American electronics engineer, programmer, philanthropist, and technology entrepreneur. "
+      ),
+      new Person(
+        "113",
+        "Brendan Eich",
+        1234567903,
+        33,
+        "America",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg",
+        "Brendan Eich is an American technologist and creator of the JavaScript programming language. He co-founded the Mozilla project, the Mozilla Foundation and the Mozilla Corporation, and served as the Mozilla Corporation's chief technical officer and briefly, as its chief executive office "
+      ),
+      new Person(
+        "114",
+        "P. V. Sindhu",
+        1234567904,
+        33,
+        "India",
+        "https://upload.wikimedia.org/wikipedia/commons/7/73/PV_Sindhu_headshot.jpg",
+        "Pusarla Venkata Sindhu is an Indian professional badminton player. Having made her international debut in 2009, she rose to a career high ranking of no. 2 in April 2017."
+      ),
+      new Person(
+        "115",
+        "Sachin Tendulkar",
+        1234567905,
+        43,
+        "India",
+        "https://sportstar.thehindu.com/cricket/article31080794.ece/ALTERNATES/LANDSCAPE_1200/Sachin-Tendulkar",
+        "Sachin Ramesh Tendulkar is an Indian former international cricketer and a former captain of the Indian national team. He is widely regarded as one of the greatest batsmen in the history of cricket. He is the highest run scorer of all time in International cricket."
+      ),
+      new Person(
+        "116",
+        "Virat Kohli",
+        1234567906,
+        33,
+        "India",
+        "https://imagevars.gulfnews.com/2019/12/19/Virat-Kohli-_16f1d3e177a_large.jpg",
+        "Virat Kohli is an Indian cricketer who currently captains the India national team. A right-handed top-order batsman, Kohli is regarded as one of the best batsmen in the world. He plays for Royal Challengers Bangalore in the Indian Premier League, and has been the team's captain since 2013."
       )
     ];
     const sorted = this.personList.sort((a: Person, b: Person) => {
