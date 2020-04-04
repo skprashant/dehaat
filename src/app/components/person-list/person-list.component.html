@@ -1,0 +1,7 @@
+<div class="mt-4">
+  <app-people-list-item
+    *ngFor="let person of persons | filter: searchKey"
+    [person]="person"
+    getDetailEvent="getDetailEvent($event)"
+  ></app-people-list-item>
+</div>

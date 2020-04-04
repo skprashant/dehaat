@@ -1,0 +1,30 @@
+<nav class="navbar navbar-light bg-dark  sticky-top">
+  <div class="container justify-content-start">
+    <a class="navbar-brand ml-sm-2" href="#">
+      <img src="assets/imgs/icon.png" width="40" height="40" alt="" />
+    </a>
+    <form class="form-inline ">
+      <input
+        class="form-control mr-sm-2 "
+        type="search"
+        placeholder="Search Name or Phone Number...."
+        aria-label="Search"
+        size="100"
+        #searchKey
+      />
+      <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+        Search
+      </button>
+    </form>
+  </div>
+</nav>
+<div class="container">
+  <div class="row" style="margin: auto 0">
+    <div class="col-sm-7 mt-2">
+      <app-person-list [searchKey]="searchKey.value"></app-person-list>
+    </div>
+    <div class="col-sm-4 mt-2">
+      <app-people-detail></app-people-detail>
+    </div>
+  </div>
+</div>

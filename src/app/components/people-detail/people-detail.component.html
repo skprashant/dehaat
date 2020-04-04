@@ -1,0 +1,49 @@
+<div class="card mt-sm-4 shadow mx-4">
+  <img
+    class="card-img-top"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_t8NB-XLLeXXeai8oqiYoPscO5_B5lrnmgJaddPULdeyvyy5l&usqp=CAU"
+    alt="Card image cap"
+  />
+  <div class="card-body ">
+    <p class="card-text"><span class="text">Name :</span> {{ person.name }}</p>
+    <div class="card-text d-flex" style="height:30px;">
+      <span>Number :</span>
+
+      <div class="mx-1" *ngIf="!editable">
+        {{ person.mobile }}
+        <img
+          class="mx-2"
+          src="assets/imgs/edit.png"
+          alt=""
+          style="width: 18px; height: 18px; cursor: pointer; "
+          (click)="editable = !editable"
+        />
+      </div>
+
+      <div class="mx-1" *ngIf="editable">
+        <form action="" #myForm="ngForm">
+          <input
+            type="tel"
+            class="form-control"
+            pattern="^\d{10}$"
+            required
+            [ngModel]="person.mobile"
+            [class.is-invalid]="myForm.form.invalid"
+            name="phone"
+            #phone
+          />
+          <button
+            class="btn btn-info"
+            [disabled]="myForm.form.invalid"
+            (click)="editPhoneNumber(phone.value)"
+          >
+            <span>&#10003;</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <p class="card-text mt-2"><span>Age :</span> {{ person.age }}</p>
+    <p class="card-text"><span>Address :</span> {{ person.address }}</p>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="card my-2 shadow">
+  <div class="container">
+    <div class="row ">
+      <div class="col-sm-6" style="height: auto;">
+        <img class="card-img-top" src="{{ person.src }}" alt="Card image cap" />
+      </div>
+      <div class="col-sm-6 p-sm-4" style="height: auto;">
+        <h5 class="blockquote">{{ person.name }}</h5>
+        <h6>{{ person.mobile }}</h6>
+        <span class="blockquote-footer">
+          {{ person.info }}
+        </span>
+        <button class="btn btn-outline-info my-sm-2" (click)="getDetail()">
+          Contact me.
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
